@@ -261,12 +261,12 @@ static const struct opcode_info_t opinfos[] =
   DI(SPC_sta,   2, DP,           -1,   rA)
   DI(SPC_sta,   3, ABS,          -1,   rA)
   DI(SPC_sta,   1, INDIR_IX,     -1,   rA)
-  DI(SPC_sta,   2, DP_IX_INDIR,  -1,   rX)
+  DI(SPC_sta,   2, DP_IX_INDIR,  -1,   rA)
 
   // 0xc8
   DI(SPC_cpx,   2, IMM,          rX,   -1)
   DI(SPC_stx,   3, ABS,          -1,   rX)
-  DI(SPC_and1,  3, BIT_OP,       -1,   rFc)
+  DI(SPC_mov1,  3, BIT_OP,       -1,   rFc)
   DI(SPC_sty,   2, DP,           -1,   rY)
   DI(SPC_sty,   3, ABS,          -1,   rY)
   DI(SPC_ldx,   2, IMM,          rX,   -1)
@@ -284,7 +284,7 @@ static const struct opcode_info_t opinfos[] =
   DI(SPC_sta,   2, DP_INDIR_IY,  -1,   rA)
 
   // 0xd8
-  DI(SPC_stx,   2, DP,           -1,   rA)
+  DI(SPC_stx,   2, DP,           -1,   rX)
   DI(SPC_stx,   2, DP_IY,        -1,   rX)
   DI(SPC_movw,  2, DP,           -1,   rYA)
   DI(SPC_sty,   2, DP_IX,        -1,   rY)
